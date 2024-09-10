@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>TAMOS | NICARAGUA</title>
+    <meta name="description" content="Tamos Nicaragua Integradores de soluciones tecnológicas">
+    <meta name="keywords" content="consultoria, diseño, implementación, ventas, mantenimiento de redes">
+    <meta name="author" content="Tamos Nicaragua by Createx Studio">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <script src="assets/js/theme-switcher.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+  <body class="bg-secondary bg-size-cover bg-position-center" style="background-image: url(assets/img/coming/lines.png);">
+
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <main class="page-wrapper py-5">
+      <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-center pb-2 py-sm-3 py-md-4 py-lg-5">
+
+        <a class="navbar-brand text-dark p-0 m-0 mb-5" href="index.html">
+          <span class="text-primary flex-shrink-0 me-2">
+            <svg width="" height="100" viewBox="0 0 150 36" xmlns="http://www.w3.org/2000/svg">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 146"><defs>
+                <style>.cls-1,.cls-3{fill:#088;}.cls-2{fill:#00345c;}.cls-3{font-size:25.84px;font-family:ErasITC-Bold, Eras Bold ITC;font-weight:700;letter-spacing:0.08em;}</style>
+              </defs><path class="cls-1" d="M1705.11,570.89l1.87-10.28a1.48,1.48,0,0,0-1.23-1.71,1.52,1.52,0,0,0-1.77,1.2L1702,571h0a18.44,18.44,0,0,1-.8,2.91c-2.88,8-11.15,14.1-19.78,14.1a14.24,14.24,0,0,1-11-4.72,13.81,13.81,0,0,1-2.94-11.77l13.6-74.86a1.48,1.48,0,0,0-.33-1.21,1.56,1.56,0,0,0-1.17-.52H1661.3a5.05,5.05,0,0,0-9.8,1.56,5,5,0,0,0,5,4.9,5,5,0,0,0,4.82-3.51h16.39l-13.29,73.13a16.64,16.64,0,0,0,3.61,14.18,17.27,17.27,0,0,0,13.34,5.77c10.22,0,20-7.46,23-17.07a21.64,21.64,0,0,0,.6-2.37ZM1656.54,499a2.47,2.47,0,1,1,2.54-2.47A2.51,2.51,0,0,1,1656.54,499Z" transform="translate(-1623 -445)"/>
+              <path class="cls-1" d="M1771.49,448.92a4.93,4.93,0,1,0-.34,3,13.51,13.51,0,0,1,7,4.22,13.81,13.81,0,0,1,2.92,11.75,20.58,20.58,0,0,1-7.34,12,21,21,0,0,1-13.24,5h-41.57a1.5,1.5,0,0,0-1.49,1.22l-10.59,58.28a1.47,1.47,0,0,0,1.23,1.71,1.24,1.24,0,0,0,.27,0,1.51,1.51,0,0,0,1.49-1.22l10.37-57.07h40.29a24.1,24.1,0,0,0,15.21-5.7,23.56,23.56,0,0,0,8.37-13.73,16.65,16.65,0,0,0-3.59-14.15A16.48,16.48,0,0,0,1771.49,448.92Zm-5,3.44a2.47,2.47,0,1,1,2.54-2.46A2.5,2.5,0,0,1,1766.54,452.36Z" transform="translate(-1623 -445)"/>
+              <path class="cls-1" d="M1682.79,491.21a4.9,4.9,0,1,0-4.79-6.37h-37.73a14.28,14.28,0,0,1-11-4.73,13.82,13.82,0,0,1-2.92-11.75c1.56-8.59,9.45-15.69,18.2-16.81a17.21,17.21,0,0,1,2.38-.18h80.86a4.9,4.9,0,1,0,0-2.95h-80.86c-.57,0-1.14,0-1.7.08-10.43.84-20,9.19-21.87,19.35A16.65,16.65,0,0,0,1626.9,482a17.28,17.28,0,0,0,13.37,5.78H1678A5,5,0,0,0,1682.79,491.21Zm49.75-43.78a2.47,2.47,0,1,1-2.54,2.47A2.51,2.51,0,0,1,1732.54,447.43Zm-49.75,36.42a2.47,2.47,0,1,1-2.54,2.46A2.5,2.5,0,0,1,1682.79,483.85Z" transform="translate(-1623 -445)"/>
+              <path class="cls-2" d="M1722.57,552.14l32.87-50.08h17.1l12.24,50.08h-17.32l-8.33-42.29h6.78l-25,42.29Zm15.18-8.73,6.93-12.16h23.74l1.91,12.16Z" transform="translate(-1623 -445)"/>
+              <path class="cls-2" d="M1794.88,552.14l10.32-50.08h14.15l13.79,32.69h-7.52l26.54-32.69H1867l-10.17,50.08H1841l5.38-26.9,2.51-.15L1831,547.63h-7.67l-10-22.61,3,.22-5.53,26.9Z" transform="translate(-1623 -445)"/>
+              <path class="cls-2" d="M1970.51,553.28a57.81,57.81,0,0,1-8.77-.64,43.78,43.78,0,0,1-7.63-1.83,34.06,34.06,0,0,1-5.93-2.61l6.71-12.45a40.59,40.59,0,0,0,5.78,2.62,34.84,34.84,0,0,0,5.83,1.53,33.44,33.44,0,0,0,5.78.5,16.83,16.83,0,0,0,3.8-.35,5.27,5.27,0,0,0,2.28-1,2,2,0,0,0,.78-1.54,2.12,2.12,0,0,0-1.33-1.86,16.36,16.36,0,0,0-3.5-1.29c-1.45-.38-3-.77-4.79-1.18a45,45,0,0,1-5.27-1.57,21.53,21.53,0,0,1-4.83-2.47,11.64,11.64,0,0,1-3.5-3.79,10.92,10.92,0,0,1-1.33-5.58,16.3,16.3,0,0,1,3.13-10,20.09,20.09,0,0,1,9-6.54,37.83,37.83,0,0,1,14-2.33,49.13,49.13,0,0,1,10.72,1.11,30.62,30.62,0,0,1,8.59,3.18l-6.27,12.31a25,25,0,0,0-6.74-2.79,29.86,29.86,0,0,0-7.41-.93,16.16,16.16,0,0,0-4.2.46,6,6,0,0,0-2.54,1.26,2.23,2.23,0,0,0-.85,1.64,2.18,2.18,0,0,0,1.33,1.9,14,14,0,0,0,3.53,1.29c1.48.35,3.09.74,4.83,1.14s3.49.91,5.24,1.5a21.37,21.37,0,0,1,4.82,2.36,11.23,11.23,0,0,1,3.54,3.72,10.76,10.76,0,0,1,1.33,5.55,15.78,15.78,0,0,1-3.17,9.77,20.61,20.61,0,0,1-9,6.54A37,37,0,0,1,1970.51,553.28Z" transform="translate(-1623 -445)"/>
+              <path class="cls-1" d="M1925.86,520.88h8.88c-1.44-14-12.94-25.15-27.36-26.53V503A21.42,21.42,0,0,1,1925.86,520.88Z" transform="translate(-1623 -445)"/><path class="cls-2" d="M1904.36,545c-12,0-21.81-9.5-21.81-21.17,0-10.66,8.18-19.41,18.74-20.87v-8.62c-15.4,1.5-27.47,14.15-27.47,29.49,0,16.34,13.7,29.63,30.54,29.63,15.81,0,28.85-11.72,30.38-26.68h-8.88A21.57,21.57,0,0,1,1904.36,545Z" transform="translate(-1623 -445)"/><ellipse class="cls-1" cx="281.28" cy="79" rx="15.22" ry="14.77"/><text class="cls-3" transform="translate(112.02 135.21) scale(1.35 1)">NICARAGUA</text></svg>
+            </svg>
+          </span>
+        </a>
+
+        <h1 class="display-2 text-primary">Actualizando nuestra web</h1>
+        <p class="fs-xl mx-auto mb-5" style="max-width: 680px;">Estamos ansiosos por revelar en qué hemos estado trabajando y agradecemos su paciencia. ¡Gracias por ser parte de nuestro viaje!</p>
+        <p class="fs-xl mx-auto mb-5" style="max-width: 680px;">ventas@tamosni.com</p>
+
+        <div class="countdown d-flex flex-wrap justify-content-center mb-5" data-countdown-date="09/14/2024 12:00:00">
+          <div class="text-center mb-2">
+            <div class="position-relative p-2">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-white rounded-1 d-dark-mode-none"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-1 d-none d-dark-mode-block"></span>
+              <div class="h3 fw-medium position-relative z-1 mb-0 mx-1" data-days></div>
+            </div>
+            <span class="fs-sm">días</span>
+          </div>
+          <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+          <div class="text-center mb-2">
+            <div class="position-relative p-2">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-white rounded-1 d-dark-mode-none"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-1 d-none d-dark-mode-block"></span>
+              <div class="h3 fw-medium position-relative z-1 mb-0 mx-1" data-hours></div>
+            </div>
+            <span class="fs-sm">horas</span>
+          </div>
+          <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+          <div class="text-center mb-2">
+            <div class="position-relative p-2">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-white rounded-1 d-dark-mode-none"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-1 d-none d-dark-mode-block"></span>
+              <div class="h3 fw-medium position-relative z-1 mb-0 mx-1" data-minutes></div>
+            </div>
+            <span class="fs-sm">mins</span>
+          </div>
+          <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+          <div class="text-center mb-2">
+            <div class="position-relative p-2">
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-white rounded-1 d-dark-mode-none"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 bg-secondary rounded-1 d-none d-dark-mode-block"></span>
+              <div class="h3 fw-medium position-relative z-1 mb-0 mx-1" data-seconds></div>
+            </div>
+            <span class="fs-sm">segs</span>
+          </div>
+        </div>
+
+        <form class="input-group mx-auto" style="max-width: 480px;">
+          <input type="email" class="form-control" placeholder="Ingresa tu correo" required>
+          <button type="submit" class="btn btn-primary">Notificarme</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="assets/vendor/timezz/dist/timezz.js"></script>
+
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
